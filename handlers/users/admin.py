@@ -8,7 +8,7 @@ from data.config import ADMINS
 
 @dp.message_handler(commands='admin',user_id=ADMINS)
 async def bot_help(message: types.Message):
-    text = 'test'
+    text = 'Welcome'
     
     await message.answer((text),reply_markup=await admin_button())
 
